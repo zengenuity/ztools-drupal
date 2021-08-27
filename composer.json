@@ -1,0 +1,19 @@
+{
+    "name": "zengenuity/ztools-drupal",
+    "description": "Drupal utility functions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wayne Eaker",
+            "email": "wayne@zengenuity.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Zengenuity\\Tools\\Drupal\\": "src" }
+    },
+    "require": {
+        "php": ">=7.4",
+        "zengenuity/ztools-php": "dev-main"
+    }
+}

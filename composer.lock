@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "00097353b5471faa97877cba25c02239",
+    "packages": [
+        {
+            "name": "zengenuity/ztools-php",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zengenuity/ztools-php.git",
+                "reference": "28e8049306d45947965bd5bdb0e304284a4dc09c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zengenuity/ztools-php/zipball/28e8049306d45947965bd5bdb0e304284a4dc09c",
+                "reference": "28e8049306d45947965bd5bdb0e304284a4dc09c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zengenuity\\Tools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wayne Eaker",
+                    "email": "wayne@zengenuity.com"
+                }
+            ],
+            "description": "PHP utility functions",
+            "support": {
+                "issues": "https://github.com/zengenuity/ztools-php/issues",
+                "source": "https://github.com/zengenuity/ztools-php/tree/main"
+            },
+            "time": "2021-08-27T15:15:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "zengenuity/ztools-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
