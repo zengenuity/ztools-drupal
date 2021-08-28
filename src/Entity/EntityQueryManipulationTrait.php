@@ -15,7 +15,7 @@ trait EntityQueryManipulationTrait {
    *
    * @return \Drupal\Core\Entity\Query\ConditionInterface
    */
-  public function dateRangeIncludes(QueryInterface $query, string $date, string $field_name = 'date') : QueryInterface {
+  public function dateRangeIncludes(QueryInterface $query, string $date, string $field_name = 'date') : ConditionInterface {
     $and = $query->andConditionGroup();
     $and->condition($field_name . '.value', $date, '<=')
       ->condition($field_name . '.end_value', $date, '>=');
@@ -30,7 +30,7 @@ trait EntityQueryManipulationTrait {
    *
    * @return \Drupal\Core\Entity\Query\ConditionInterface
    */
-  public function dateInRange(QueryInterface $query, string $range_start, string $range_end, string $field_name = 'date') : QueryInterface {
+  public function dateInRange(QueryInterface $query, string $range_start, string $range_end, string $field_name = 'date') : ConditionInterface {
     $and = $query->andConditionGroup();
     $and->condition($field_name . '.value', $range_start, '>=')
       ->condition($field_name . '.value', $range_end, '<=');
