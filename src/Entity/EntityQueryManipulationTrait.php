@@ -63,7 +63,7 @@ trait EntityQueryManipulationTrait {
    *
    * @return \Drupal\Core\Entity\Query\ConditionInterface
    */
-  public function dateRangeMustNotOverlap(QueryInterface $query, string $start_date, string $end_date, string $field_name = 'date', string $end_date_field_name = NULL, bool $include_null_start_date = FALSE, bool $include_null_end_date = FALSE) : ConditionInterface {
+  public function dateRangeOverlaps(QueryInterface $query, string $start_date, string $end_date, string $field_name = 'date', string $end_date_field_name = NULL, bool $include_null_start_date = FALSE, bool $include_null_end_date = FALSE) : ConditionInterface {
     if ($end_date_field_name === NULL) {
       $end_date_field_name = $field_name;
       $start_column = 'value';
